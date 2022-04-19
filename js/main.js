@@ -44,6 +44,7 @@
 
    // Burger Menu
 	var burgerMenu = function() {
+		
 
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 
@@ -67,6 +68,9 @@
 
 
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
+		console.log('sdsdsd');
+		$("#ftco-nav").addClass('collapse');	
+		$("#ftco-nav").removeClass('show');	
 	    event.preventDefault();
 
 	    var href = $.attr(this, 'href');

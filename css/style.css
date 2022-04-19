@@ -4,7 +4,10 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 :root {
+  overflow: scroll;
+ 
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8143,7 +8146,7 @@ body {
     overflow: hidden;
     position: fixed;
     height: 100%;
-    width: 100%; }
+     }
 
 a {
   -webkit-transition: .3s all ease;
@@ -8338,7 +8341,7 @@ h1, h2, h3, h4, h5,
         margin-left: 0 !important; } }
     .ftco-navbar-light.scrolled .navbar-toggler {
       border: none;
-      color: rgba(0, 0, 0, 0.5) !important;
+      color: rgb(253 253 253 / 50%) !important;
       border-color: rgba(0, 0, 0, 0.5) !important;
       cursor: pointer;
       text-transform: uppercase;
@@ -9682,3 +9685,8 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+    *::-webkit-scrollbar {
+      display: none;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none; 
+    }
